@@ -13,8 +13,10 @@ def find(e):
         Ad_Name.append(f)
         Ad_Value.append(s)
         return True
-    else:
+    if e in Ad_Value:
         print(Ad_Name[Ad_Value.index(e)])
-
+        return True
+    else:
+        return False
 if __name__ == '__main__':
     Tr()
